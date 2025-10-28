@@ -15,3 +15,18 @@ img{
     margin: 2.5rem;
 
 }   
+.super_hit{
+    background-color: #12b458;
+}
+.average{
+    background-color: #d0b64c;
+}
+.rating{
+    padding: 0.3rem 1.8rem;
+    color: #000;
+    margin-left: 1.2rem;
+    border-radius: 100rem;
+    -moz-border-readius: 100rem;
+    -ms-border-readius: 100rem;
+    -o-border-readius: 100rem;
+}
