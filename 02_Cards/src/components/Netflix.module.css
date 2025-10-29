@@ -1,0 +1,32 @@
+.card{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 24px 0px,
+                rgba(0, 0, 0, 0.22) 0px 0px 0px 1px;
+}
+img{
+    width: 100%;
+}
+.card-content{
+    padding: 3.2rem 1.2rem;  
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.card-heading {
+    margin: 2.5rem;
+
+}   
+.super_hit{
+    background-color: #12b458;
+}
+.average{
+    background-color: #d0b64c;
+}
+.rating{
+    padding: 0.3rem 1.8rem;
+    color: #000;
+    margin-left: 1.2rem;
+    border-radius: 100rem;
+    -moz-border-readius: 100rem;
+    -ms-border-readius: 100rem;
+    -o-border-readius: 100rem;
+}

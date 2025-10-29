@@ -1,7 +1,9 @@
+import Styles from"./Netflix.module.css" //css module import;
 export const SeriesCards=({data})=>{
     // Destructuring props.data and data is the object passed from parent component
     const{img_url,name,rating,description,cast,genre,watch_url}=data; 
 
+    // Inline Styles for button
     const btn_styles={
         padding:"1.2rem 2.4rem",
         border:"none",
@@ -12,9 +14,11 @@ export const SeriesCards=({data})=>{
         cursor:"pointer"
     }
 
-    const ratingClass= rating>=8.5?"super_hit":"average";
+    // Conditional class for rating
+    const ratingClass= rating>=8.5?Styles.super_hit : Styles.average;
+    
     return(
-    <li className="card">
+    <li className={Styles.card}>
     <div>
         <img
         src={img_url} // instead of props.data.img_url we can use img_url directly after destructuring
@@ -23,9 +27,11 @@ export const SeriesCards=({data})=>{
         width="40%" 
         />
     </div>
-    <div className="card-content">
+    <div className={Styles["card-content"]}>
         <h2>Name : {name}</h2>
-        <h3>Rating : <span className={`rating ${ratingClass}`}>
+        <h3>Rating : <span className={`${Styles.rating} ${ratingClass}`}> 
+            {/* here ratingClass is conditional class written as variable and Styles.rating is common class  */}
+
             {rating} 
             </span>
             </h3>
