@@ -27,15 +27,14 @@ export const SeriesCards=({data})=>{
         width="40%" 
         />
     </div>
-    <div className={Styles["card-content"]}>
+    <div className="flex flex-col gap-5 py-[3.2rem] px-[1.2rem]">
         <h2>Name : {name}</h2>
         <h3>Rating : <span className={`${Styles.rating} ${ratingClass}`}> 
             {/* here ratingClass is conditional class written as variable and Styles.rating is common class  */}
-
             {rating} 
             </span>
             </h3>
-        <p>Description : {description} </p>
+        <p className="text-3xl font-bold underline">Description : {description} </p>
         <p>Cast : {cast}</p>
         <p>Genre: {genre}</p>
         <a href={watch_url} target="_blank">
